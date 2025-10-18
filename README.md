@@ -1,5 +1,6 @@
 # `nag_agk_ajr` package
 ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
+<br>
 A package egy nodeból áll. A `/lexus3/os_center/points` topic-ról kapott értékeket filterezi `0.2` és `4.0` értékek között. Ezeket a szűrt értékeket a `/lexus3/os_center/filtered_points` topic-on hirdeti.
 ## Packages and build
 
@@ -34,8 +35,8 @@ ros2 launch nag_agk_ajr filter.launch.py
 ```
 # Flow chart
 
-flowchart TD
 ```mermaid
+flowchart TD
     A[/center_lidar/]:::node --> B[/lexus3/os_center/points/]:::topic
     B --> C[/filter/]:::node
     C --> D[/lexus3/os_center/points_filtered/]:::topic
@@ -46,4 +47,4 @@ flowchart TD
 # Reference Image
 
 
-<p align="center"><img src="img/points_filtered_points.png" width="60%" /></p>
+<p align="center"><img src="img/points_filtered_points.png" width="100%" /></p>
