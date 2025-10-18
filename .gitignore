@@ -1,0 +1,30 @@
+# colcon
+/build/
+/install/
+/log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Bags, temp, artifacts
+*.mcap
+*.bag
+*.bag.active
+*.orig
+*.swp
+*.tmp
+*.log
+
+# Foxglove/rviz caches
+.rviz2/
+.foxglove/
